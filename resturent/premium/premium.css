@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #111;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: black;
+    color: #c6a75e;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c6a75e;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('https://images.unsplash.com/photo-1543353071-873f17a7a088');
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #c6a75e;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.dark {
+    background: #000;
+}
+
+.menu-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background: #222;
+    padding: 20px;
+    margin: 15px;
+    width: 220px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+.admin-panel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.admin-card {
+    background: #222;
+    padding: 20px;
+    margin: 15px;
+    width: 200px;
+    border-radius: 8px;
+}

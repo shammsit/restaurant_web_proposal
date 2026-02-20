@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Royal Feast | Premium Restaurant Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="premium.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Royal Feast</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#cart">Cart (<span id="cartCount">0</span>)</a>
+        <a href="#admin">Admin</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Luxury Dining Experience</h1>
+        <p>Order Online & Enjoy Premium Taste</p>
+        <button onclick="scrollToSection('menu')">Order Now</button>
+    </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="section">
+    <h2>Our Signature Dishes</h2>
+    <div class="menu-grid">
+
+        <div class="menu-card">
+            <h3>Royal Chicken Biryani</h3>
+            <p>₹349</p>
+            <button onclick="addToCart('Royal Chicken Biryani',349)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <h3>Premium Mutton Kosha</h3>
+            <p>₹499</p>
+            <button onclick="addToCart('Premium Mutton Kosha',499)">Add to Cart</button>
+        </div>
+
+        <div class="menu-card">
+            <h3>Paneer Deluxe</h3>
+            <p>₹299</p>
+            <button onclick="addToCart('Paneer Deluxe',299)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- CART -->
+<section id="cart" class="section dark">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <h3>Total: ₹<span id="totalPrice">0</span></h3>
+    <button onclick="checkout()">Proceed to Payment</button>
+</section>
+
+<!-- PAYMENT DEMO -->
+<section id="payment" class="section">
+    <h2>Payment Gateway (Demo)</h2>
+    <p>Select Payment Method:</p>
+    <button onclick="fakePayment()">UPI</button>
+    <button onclick="fakePayment()">Credit/Debit Card</button>
+</section>
+
+<!-- ADMIN ORDER DASHBOARD -->
+<section id="admin" class="section dark">
+    <h2>Admin Order Dashboard (Demo)</h2>
+    <div class="admin-panel">
+        <div class="admin-card">
+            <h3>Total Orders Today</h3>
+            <p>18</p>
+        </div>
+        <div class="admin-card">
+            <h3>Revenue Today</h3>
+            <p>₹12,540</p>
+        </div>
+        <div class="admin-card">
+            <h3>Pending Orders</h3>
+            <p>3</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Royal Feast | Premium Package Demo</p>
+</footer>
+
+<script src="premium.js"></script>
+</body>
+</html>
